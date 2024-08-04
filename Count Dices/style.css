@@ -190,6 +190,17 @@ button {
     background-color: #f7f7f7;
     font-size: 28px;
     font-weight: 600;
+    transition: all .1s;
+}
+
+button:hover {
+    background-color: #E6E6E6;
+}
+
+button:active,
+.amount button:active {
+    background-color: #0f0f0f;
+    color: #f7f7f7
 }
 
 small {
