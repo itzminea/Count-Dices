@@ -1,0 +1,140 @@
+body {
+    --color1: #e6e1c5;
+    --color2: #d4cb92;
+    --color3: #f8333c;
+    --color4: #80a4ed;
+    --color5: #395c6b;    
+    cursor: default;
+}
+
+body,
+.amount button {
+    color: var(--color5);
+}
+
+button,
+body,
+.amount button {
+    background-color: var(--color1);
+}
+
+body,
+.amount,
+#dices {
+    display: flex;
+}
+
+body,
+.amount,
+.amount button {
+    align-items: center;
+}
+
+.amount,
+.dicesPlace,
+button {
+    border-radius: 20px;
+}
+
+.amount,
+#dices {
+    justify-content: space-evenly;
+}
+
+button,
+.amount button {
+    height: 50px;
+}
+
+.dicesPlace,
+#dices {
+    height: 200px;
+}
+
+body,
+#dices {
+    gap: 10px;
+}
+
+body {
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10%; 
+}
+
+.amount {
+    width: 250px;
+    background-color: var(--color1);
+}
+
+body .amount button {
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+    justify-content: center;
+    transition: all .2s;
+}
+
+.dicesPlace {
+    width: 75%;
+    background-color: var(--color2);
+}
+
+#dices {
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#dices img {
+    display: inline-block;
+    justify-self: center;
+    width: 75px;
+    height: 75px;
+}
+
+button {
+    color: var(--color5);
+    cursor: pointer;
+    width: 200px;
+    font-size: 28px;
+    font-weight: 600;
+    transition: all .2s;
+    border: var(--color2) solid .5px;
+}
+
+#theme {
+    width: 300px;
+}
+
+button:hover {
+    background-color: var(--color2);
+    color: var(--color1);
+}
+
+.amount #max:hover {
+    border: var(--color3) solid 1px;
+    background-color: var(--color1);
+    color: var(--color5);
+}
+
+.amount #max:active {
+    border: var(--color3) solid 1px;
+    background-color: var(--color3);
+    color: var(--color1);
+}
+
+.amount #min:hover {
+    border: var(--color4) solid 1px;
+    background-color: var(--color1);
+    color: var(--color5);
+}
+
+.amount #min:active {
+    border: var(--color4) solid 1px;
+    background-color: var(--color4);
+    color: var(--color1);
+}
